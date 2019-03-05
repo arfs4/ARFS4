@@ -1,7 +1,7 @@
 
 #define RESPAWN_WAIT_TIME 60 * 10 //seconds * 10 to get deciseconds
 //Respawn time to 60 seconds
-/mob/verb/abandon_mob()
+/mob/abandon_mob()
 	set name = "Respawn"
 	set category = "OOC"
 
