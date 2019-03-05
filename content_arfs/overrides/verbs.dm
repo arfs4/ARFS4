@@ -33,7 +33,7 @@
 		to_chat(usr, "You have been dead for[pluralcheck] [deathtimeseconds] seconds.")
 
 		if ((deathtime < RESPAWN_WAIT_TIME) && (ticker && ticker.current_state > GAME_STATE_PREGAME))
-			to_chat(usr, "You must wait 1 minutes to respawn!")
+			to_chat(usr, "You must wait [RESPAWN_WAIT_TIME / 600] minute(s) to respawn!")
 			return
 		else
 			to_chat(usr, "You can respawn now, enjoy your new life!")
