@@ -49,7 +49,7 @@
 	icon_state = "flightcomp_center"
 	icon_screen = "flight_center"
 	icon_keyboard = "flight_center_key"
-	var/wait_time = 1 MINUTES
+	var/wait_time = 30 MINUTES
 
 /obj/machinery/computer/shuttle_control/web/excursion/ui_interact()
 	if(world.time < wait_time)
@@ -121,7 +121,7 @@
 
 	routes_to_make = list(
 		/datum/shuttle_destination/excursion/odin5_orbit = 30 SECONDS,
-		/datum/shuttle_destination/excursion/bluespace = 30 SECONDS
+		/datum/shuttle_destination/excursion/bluespace = 45 SECONDS
 	)
 
 //In orbit around gas giant with many moons
@@ -132,7 +132,8 @@
 
 	routes_to_make = list(
 		/datum/shuttle_destination/excursion/odin5a_orbit = 30 SECONDS,
-		/datum/shuttle_destination/excursion/outside_endeavor = 30 SECONDS
+		/datum/shuttle_destination/excursion/outside_endeavor = 30 SECONDS,
+		/datum/shuttle_destination/excursion/bluespace = 45 SECONDS
 	)
 /*
 //In orbit around the first moon of Odin 5
@@ -145,8 +146,13 @@
 	)
 */
 
-////////// Distant Destinations
+////////// Jump here if you're trying to go far in a hurry. Allows you to skip between star systems and between
+////////// planets that are more than 1 jump away from one another
 /datum/shuttle_destination/excursion/bluespace
 	name = "Bluespace Jump"
 	my_area = /area/shuttle/excursion/bluespace
 	preferred_interim_area = /area/shuttle/excursion/space_moving
+	routes_to_make = list(
+		/datum/shuttle_destination/excursion/odin5_orbit = 45 SECONDS,
+		/datum/shuttle_destination/excursion/outside_endeavor = 45 SECONDS
+	)
