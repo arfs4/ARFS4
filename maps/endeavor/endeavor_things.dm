@@ -401,3 +401,21 @@
 	icon_state = "mist"
 /obj/effect/mist/mapped/moving
 	icon_state = "mist_moving"
+
+
+/obj/random/single/xeno_egg_25
+	name = "xenomorph egg 25% chance"
+	spawn_nothing_percentage = 75
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_50
+	name = "xenomorph egg 50% chance"
+	spawn_nothing_percentage = 50
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_75
+	name = "xenomorph egg 75% chance"
+	spawn_nothing_percentage = 25
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_100
+	name = "xenomorph egg 100% chance"
+	spawn_nothing_percentage = 0
+	spawn_object = /obj/effect/alien/egg
