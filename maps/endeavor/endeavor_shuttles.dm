@@ -135,16 +135,6 @@
 		/datum/shuttle_destination/excursion/outside_endeavor = 30 SECONDS,
 		/datum/shuttle_destination/excursion/bluespace = 45 SECONDS
 	)
-/*
-//In orbit around the first moon of Odin 5
-/datum/shuttle_destination/excursion/odin5a_orbit
-	name = "Odin 5a Orbit"
-	my_area = /area/shuttle/excursion/space
-	preferred_interim_area = /area/shuttle/excursion/space_moving
-	routes_to_make = list(
-		/datum/shuttle_destination/excursion/odin5_orbit = 30 SECONDS
-	)
-*/
 
 ////////// Jump here if you're trying to go far in a hurry. Allows you to skip between star systems and between
 ////////// planets that are more than 1 jump away from one another
