@@ -9,9 +9,8 @@
 	preferred_interim_area = /area/shuttle/excursion/space_moving //The area the shuttle goes while it's moving there
 	skip_me = TRUE //Must be TRUE on all away-mission destinations for reasons
 
-	routes_to_make = list( //These are routes the shuttle connects to,
-		/datum/shuttle_destination/excursion/odin5_orbit = 30 SECONDS,
-		/datum/shuttle_destination/excursion/beach = 30 SECONDS
+	routes_to_make = list(
+		/datum/shuttle_destination/excursion/odin5_orbit = 30 SECONDS
 	)
 
 //The other destination is landed on the surface
@@ -22,7 +21,7 @@
 	skip_me = TRUE
 
 	routes_to_make = list(
-		/datum/shuttle_destination/excursion/odin5a_orbit = 30 SECONDS //This is the above one
+		/datum/shuttle_destination/excursion/odin5a_orbit = 30 SECONDS
 	)
 
 //This is a special subtype of the thing that generates ores on a map
