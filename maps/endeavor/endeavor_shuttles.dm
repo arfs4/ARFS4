@@ -35,6 +35,8 @@
 	dock_target_station = "cargo_bay"
 	flags = SHUTTLE_FLAGS_PROCESS|SHUTTLE_FLAGS_SUPPLY
 
+
+//Research
 /datum/shuttle/ferry/research
 	name = "Research"
 	warmup_time = 10
