@@ -43,7 +43,7 @@
 	area_offsite = /area/shuttle/research/outpost
 	area_station = /area/shuttle/research/station
 	docking_controller_tag = "research_shuttle"
-	dock_target_station = "research_dock_airlock"
+	dock_target_station = "research_dock"
 	dock_target_offsite = "research_outpost_dock"
 
 /obj/machinery/computer/shuttle_control/mining
