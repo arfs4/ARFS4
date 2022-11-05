@@ -6,7 +6,7 @@
 	amount_per_transfer_from_this = 10
 	volume = 10
 
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/miner/New()
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/miner/Initialize()
 	..()
 	reagents.add_reagent("bicaridine", 5)
 	reagents.add_reagent("tricordrazine", 3)
