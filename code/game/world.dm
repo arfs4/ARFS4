@@ -33,8 +33,6 @@
 	//end-emergency fix
 
 	src.update_status()
-	TgsNew()
-	TgsInitializationComplete()
 	. = ..()
 
 #if UNIT_TEST
@@ -380,7 +378,6 @@ var/world_topic_spam_protect_time = world.timeofday
 				return "Ckey not found"
 		else
 			return "Database connection failed or not set up"
-	TGS_TOPIC
 
 /world/Reboot(reason = 0, fast_track = FALSE)
 	/*spawn(0)
@@ -403,7 +400,6 @@ var/world_topic_spam_protect_time = world.timeofday
 				C << link("byond://[config.server]")
 
 	log_world("World rebooted at [time_stamp()]")
-	TgsReboot()
 	..()
 
 /hook/startup/proc/loadMode()

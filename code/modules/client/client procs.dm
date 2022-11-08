@@ -174,8 +174,6 @@
 			log_and_message_admins("PARANOIA: [key_name(src)] has connected here for the first time.")
 		if(isnum(account_age) && account_age <= 2)
 			log_and_message_admins("PARANOIA: [key_name(src)] has a very new BYOND account ([account_age] days).")
-	
-	++global.client_count
 
 	//////////////
 	//DISCONNECT//
@@ -187,7 +185,6 @@
 	GLOB.ahelp_tickets.ClientLogout(src)
 	GLOB.directory -= ckey
 	GLOB.clients -= src
-	--global.client_count
 	return ..()
 
 /client/Destroy()
